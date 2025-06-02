@@ -137,26 +137,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="GameObject\Camera\Camera.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Map.cpp" />
-    <ClCompile Include="Pad.cpp" />
-    <ClCompile Include="player.cpp" />
-    <ClCompile Include="SceneGameOver.cpp" />
-    <ClCompile Include="SceneMain.cpp" />
-    <ClCompile Include="SceneManager.cpp" />
-    <ClCompile Include="SceneTitle.cpp" />
+    <ClCompile Include="GameObject\Map\Map.cpp" />
+    <ClCompile Include="InputDevice\Pad\Pad.cpp" />
+    <ClCompile Include="GameObject\Player\player.cpp" />
+    <ClCompile Include="Scene\SceneGameOver\SceneGameOver.cpp" />
+    <ClCompile Include="Scene\SceneMain\SceneMain.cpp" />
+    <ClCompile Include="Scene\Manager\SceneManager.cpp" />
+    <ClCompile Include="Scene\SceneTitle\SceneTitle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Camera.h" />
+    <ClInclude Include="GameObject\Camera\Camera.h" />
     <ClInclude Include="game.h" />
-    <ClInclude Include="Map.h" />
-    <ClInclude Include="Pad.h" />
-    <ClInclude Include="player.h" />
-    <ClInclude Include="SceneGameOver.h" />
-    <ClInclude Include="SceneMain.h" />
-    <ClInclude Include="SceneManager.h" />
-    <ClInclude Include="SceneTitle.h" />
+    <ClInclude Include="GameObject\Map\Map.h" />
+    <ClInclude Include="InputDevice\Pad\Pad.h" />
+    <ClInclude Include="GameObject\Player\player.h" />
+    <ClInclude Include="Scene\SceneGameOver\SceneGameOver.h" />
+    <ClInclude Include="Scene\SceneMain\SceneMain.h" />
+    <ClInclude Include="Scene\Manager\SceneManager.h" />
+    <ClInclude Include="Scene\SceneTitle\SceneTitle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
