@@ -1,6 +1,3 @@
-﻿  SceneMain.cpp
-C:\Users\安藤 歩夢\Desktop\game_\untitle_Boon\SceneMain.cpp(71,28): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\安藤 歩夢\Desktop\game_\untitle_Boon\SceneMain.cpp(71,45): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\安藤 歩夢\Desktop\game_\untitle_Boon\SceneMain.cpp(75,19): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\安藤 歩夢\Desktop\game_\untitle_Boon\SceneMain.cpp(75,37): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  untitle_Boon.vcxproj -> C:\Users\安藤 歩夢\Desktop\game_\untitle_Boon\x64\Debug\untitle_Boon.exe
+﻿  player.cpp
+C:\Users\安藤 歩夢\OneDrive - ooharastudent\ドキュメント\GitHub\untitle_\Ando_3DGame\untitle_Boon\GameObject\Player\player.cpp(80,61): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  untitle_Boon.vcxproj -> C:\Users\安藤 歩夢\OneDrive - ooharastudent\ドキュメント\GitHub\untitle_\Ando_3DGame\untitle_Boon\x64\Debug\untitle_Boon.exe

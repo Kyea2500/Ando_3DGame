@@ -1,7 +1,7 @@
 #include "player.h"
 #include "DxLib.h"
-#include "game.h"
-#include "Pad.h"
+#include "../../InputDevice/game.h"
+#include "../../InputDevice/Pad/Pad.h"
 
 
 namespace
@@ -15,11 +15,20 @@ namespace
 	// プレイヤーの当たり判定
 	constexpr int kPlayerColor = 0xffffff;
 	// プレイヤーの重力
-	constexpr float kGravity = 0.5f; // 重力の値
+	constexpr float kGravity = -0.5f; // 重力の値
+
+	// プレイヤーのジャンプ力
+	constexpr float kJumpPower = 16.0f;
+
+	// プレイヤーの移動加速度
+	constexpr float kMoveAccel = 1.0f;
+	// 移動減速率
+	constexpr float kMoveDecRate = 0.80f;
 
 }
 player::player()
 	: m_pos(VGet(0.0f, 0.0f,0.0f)), // プレイヤーの初期座標を設定
+	m_vec(VGet(0.0f, 0.0f, 0.0f)), // プレイヤーの移動ベクトルを初期化
 	speed(kPlayerSpeed), // プレイヤーの移動速度を設定
 	m_modelHandle(-1), // プレイヤーのモデルハンドルを初期化
 	m_isMoveRight(false), // プレイヤーの移動方向を初期化
@@ -44,12 +53,17 @@ void player::End()
 
 void player::Update()
 {
-	if (m_isSky)
+	m_pos = VAdd(m_pos, m_vec);
+	m_vec.x *= kMoveDecRate;
+	m_vec.z *= kMoveDecRate;
+
+	if (isJumping())
 	{
-		m_pos.y += kGravity;
+		m_vec.y += kGravity;
 	}
 	else
 	{
+		m_vec.y = 0.0f;
 		m_pos.y = 0.0f;
 	}
 	// 入力状態の更新
@@ -82,7 +96,7 @@ void player::UpdateJump()
 		{
 			m_isJump = true; // ジャンプ中にする
 			m_isSky = true; // 空中にいる状態にする
-			m_pos.y = 50.0f; // 上に移動
+			m_vec.y = 20.0f; // 上に移動
 		}
 	}
 }
@@ -99,17 +113,17 @@ void player::UpdateMove()
 	if (Pad::IsPress(PAD_INPUT_UP))
 	{
 		// 上に移動
-		m_pos.z += speed;
+		m_vec.z += speed;
 	}
 	if (Pad::IsPress(PAD_INPUT_DOWN))
 	{
 		// 下に移動
-		m_pos.z -= speed;
+		m_vec.z -= speed;
 	}
 	if (Pad::IsPress(PAD_INPUT_LEFT))
 	{
 		// 左に移動
-		m_pos.x -= speed;
+		m_vec.x -= speed;
 		// 左を向いている
 		m_isMoveLeft = true;
 		m_isMoveRight = false;
@@ -119,7 +133,7 @@ void player::UpdateMove()
 	if (Pad::IsPress(PAD_INPUT_RIGHT))
 	{
 		// 右に移動
-		m_pos.x += speed;
+		m_vec.x += speed;
 		// 右を向いている
 		m_isMoveRight = true;
 		m_isMoveLeft = false;
@@ -127,19 +141,10 @@ void player::UpdateMove()
 
 	// 移動状態を更新
 	MV1SetPosition(m_modelHandle, m_pos);
-	
-
-	// プレイヤーの位置を更新
-	
-
-	//// 画面外に出ないように制限（オプション）
-	//// 右方向
-	//if (m_pos.x < kPlayerRadius) m_pos.x = kPlayerRadius;
-	//// 左方向
-	//if (m_pos.x > Game::kScreenWidth- kPlayerRadius) m_pos.x = Game::kScreenWidth- kPlayerRadius;
-	//// 上方向
-	//if (m_pos.y < kPlayerRadius) m_pos.y = kPlayerRadius;
-	//// 下方向
-	//if (m_pos.y > Game::kScreenHeight + kPlayerRadius) m_pos.y = Game::kScreenHeight + kPlayerRadius;
-
 }
+
+bool player::isJumping() const
+{
+	return  (m_pos.y > 0.0f);
+}
+

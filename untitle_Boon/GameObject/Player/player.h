@@ -21,10 +21,13 @@ public:
 private:
 	void UpdateJump();
 	void UpdateMove();
+	bool isJumping() const;
 
 private:
 	// プレイヤーの座標
 	VECTOR m_pos;
+	// プレイヤーの移動ベクトル
+	VECTOR m_vec;
 	
 	// プレイヤーの移動速度
 	float speed;

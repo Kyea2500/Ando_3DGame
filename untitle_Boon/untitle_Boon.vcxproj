@@ -149,7 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameObject\Camera\Camera.h" />
-    <ClInclude Include="game.h" />
+    <ClInclude Include="InputDevice\game.h" />
     <ClInclude Include="GameObject\Map\Map.h" />
     <ClInclude Include="InputDevice\Pad\Pad.h" />
     <ClInclude Include="GameObject\Player\player.h" />

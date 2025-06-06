@@ -1,8 +1,8 @@
 #include "SceneMain.h"
 #include "DxLib.h"
-#include "game.h"
-#include "player.h"
-#include "Camera.h"
+#include "../../InputDevice/game.h"
+#include "../../GameObject/Player/player.h"
+#include "../../GameObject/Camera/Camera.h"
 
 
 SceneMain::SceneMain()

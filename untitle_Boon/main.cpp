@@ -1,6 +1,6 @@
 #include "DxLib.h"
-#include "game.h"
-#include"SceneMain.h"
+#include "InputDevice/game.h"
+#include"Scene/SceneMain/SceneMain.h"
 namespace
 {
 	constexpr int MaxTime = 16667;

@@ -1,7 +1,7 @@
 #include "SceneManager.h"
-#include "SceneTitle.h"
-#include "SceneMain.h"
-#include "SceneGameOver.h"
+#include "../SceneTitle/SceneTitle.h"
+#include "../SceneMain/SceneMain.h"
+#include "../SceneGameOver/SceneGameOver.h"
 
 SceneManager::SceneManager():
 	m_Kind(kSceneTitle), // 初期シーンをタイトルに設定
