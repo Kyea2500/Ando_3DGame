@@ -49,6 +49,9 @@ void SceneMain::Update()
 {
 	// プレイヤーの更新処理
 	m_pPlayer->Update();
+	// カメラの更新処理
+	m_pCamera->Update(); // カメラの更新
+	//
 	// 敵の更新処理
 	// m_pEnemy->Update(); // 敵の更新（必要ならコメントアウトを外す）
 }

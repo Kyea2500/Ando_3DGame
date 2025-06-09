@@ -8,7 +8,9 @@ public:
 
 	void Init();
 	void Update();
-
+private:
+	void Lean_to_the_Right();
+	void Lean_to_the_Left();
 private:
 	float m_Near;  // ƒJƒƒ‰‚Ì‹ß‚­‚Ì‹——£
 	float m_Far;   // ƒJƒƒ‰‚Ì‰“‚­‚Ì‹——£

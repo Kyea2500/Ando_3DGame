@@ -15,6 +15,9 @@ public:
 	// 更新処理
 	void Update();
 	VECTOR GetPos() const { return m_pos; }
+	VECTOR GetColPos() const;
+	float GetColRadius() const;
+	float GetColRadiusSign() const;
 	// 描画処理
 	void Draw();
 
@@ -43,7 +46,8 @@ private:
 	bool m_isMove;			// trueなら移動中		falseなら移動していない
 
 	// プレイヤーのジャンプ状態
-	bool m_isJump;		    // trueならジャンプ中		falseならジャンプしていない
+	//bool m_isJump;		    // trueならジャンプ中		falseならジャンプしていない
+	int m_isJump;			// 0:未ジャンプ, 1:1段目ジャンプ, 2:2段目ジャンプ
 
 	// プレイヤーが空中にいるか
 	bool m_isSky;		// trueなら空中にいる	falseなら地上にいる
