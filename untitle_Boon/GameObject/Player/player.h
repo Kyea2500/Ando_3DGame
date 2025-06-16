@@ -9,6 +9,7 @@ public:
 	~player();
 	// 初期化処理
 	void Init();
+	// モデルハンドルを設定
 	void SetModel(int model) { m_modelHandle = model; }
 	// 終了処理
 	void End();

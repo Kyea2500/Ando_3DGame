@@ -143,13 +143,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameEngine\Scene\SceneClera\SceneClear .cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="GameEngine\GameObject\Player\Player.cpp" />
+    <ClCompile Include="GameEngine\InputDevice\Pad\Pad.cpp" />
+    <ClCompile Include="GameEngine\Scene\Manager\SceneManager.cpp" />
+    <ClCompile Include="GameEngine\Scene\SceneTitle\SceneTitle.cpp" />
+    <ClCompile Include="GameEngine\Scene\SceneMain\SceneMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameEngine\GameObject\Base\GameObject.h" />
+    <ClInclude Include="GameEngine\InputDevice\Game.h" />
     <ClInclude Include="GameEngine\Parts\Transform\transform.h" />
     <ClInclude Include="GameEngine\GameObject\Player\Player.h" />
+    <ClInclude Include="GameEngine\InputDevice\Pad\Pad.h" />
+    <ClInclude Include="GameEngine\Scene\Manager\SceneManager.h" />
+    <ClInclude Include="GameEngine\Scene\SceneTitle\SceneTitle.h" />
+    <ClInclude Include="GameEngine\Scene\SceneMain\SceneMain.h" />
+    <ClInclude Include="GameEngine\Scene\SceneClera\SceneClear .h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

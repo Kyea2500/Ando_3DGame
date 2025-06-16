@@ -1,8 +1,11 @@
 #include "DxLib.h"
+#include"GameEngine/InputDevice/Game.h"
 
 // プログラムは WinMain から始まります
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
+	// フルスクリーンではなく、ウィンドウモードで開くようにする
+	ChangeWindowMode(Game::kDefaultWindowMode);
 	SetWindowText("<Untitle>");
 
 	if (DxLib_Init() == -1)		// ＤＸライブラリ初期化処理
