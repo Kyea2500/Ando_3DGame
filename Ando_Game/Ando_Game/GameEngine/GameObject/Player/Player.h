@@ -9,6 +9,8 @@ private:
 	bool isJumping() const;
 
 private:
+	std::shared_ptr<Transform> m_transform;
+
 	// プレイヤーの位置
 	VECTOR m_pos;
 	// プレイヤーの移動ベクトル

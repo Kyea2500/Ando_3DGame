@@ -1,19 +1,9 @@
-﻿  Camera.cpp
-  Map.cpp
-C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\untitle_Boon\GameObject\Map\Map.cpp(58,28): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\untitle_Boon\GameObject\Map\Map.cpp(58,45): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\untitle_Boon\GameObject\Map\Map.cpp(62,19): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\untitle_Boon\GameObject\Map\Map.cpp(62,37): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  Pad.cpp
-  player.cpp
-  SceneGameOver.cpp
+﻿  player.cpp
   SceneMain.cpp
 C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\untitle_Boon\Scene\SceneMain\SceneMain.cpp(74,28): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\untitle_Boon\Scene\SceneMain\SceneMain.cpp(74,45): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\untitle_Boon\Scene\SceneMain\SceneMain.cpp(78,19): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\untitle_Boon\Scene\SceneMain\SceneMain.cpp(78,37): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  SceneManager.cpp
-  SceneTitle.cpp
   コードを生成中...
-  main.cpp
+  LINK : 前回のインクリメンタル リンクで C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\untitle_Boon\x64\Debug\untitle_Boon.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
   untitle_Boon.vcxproj -> C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\untitle_Boon\x64\Debug\untitle_Boon.exe

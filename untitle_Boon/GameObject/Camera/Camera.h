@@ -8,6 +8,9 @@ public:
 
 	void Init();
 	void Update();
+
+	void UpdateCamera(VECTOR playerPos);
+
 private:
 	void Lean_to_the_Right();
 	void Lean_to_the_Left();

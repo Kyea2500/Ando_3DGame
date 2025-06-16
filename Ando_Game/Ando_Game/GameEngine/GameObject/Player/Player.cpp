@@ -35,11 +35,14 @@ m_isMove(false),
 m_isJump(0),
 m_isSky(false)
 {
+	
 }
 
 void Player::Init()
 {
-	GetTransform()->SetPosition(VGet(0, 0, 0));
+	m_transform->SetPosition({ 0.f, 0.f, 0.f });
+
+
 }
 
 void Player::Update()

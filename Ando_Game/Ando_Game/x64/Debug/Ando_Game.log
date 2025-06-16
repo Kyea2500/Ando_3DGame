@@ -1,2 +1,10 @@
-﻿  main.cpp
-  Ando_Game.vcxproj -> C:\Users\安藤 歩夢\OneDrive - ooharastudent\ドキュメント\GitHub\untitle_\Ando_3DGame\Ando_Game\x64\Debug\Ando_Game.exe
+﻿  Player.cpp
+C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\Ando_Game\Library\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+  SceneMain.cpp
+C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\Ando_Game\Library\プロジェクトに追加すべきファイル_VC用\DxLib.h(3344,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(70,28): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(70,45): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(74,19): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(74,37): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  コードを生成中...
+  Ando_Game.vcxproj -> C:\Users\fko2347069\Documents\GitHub\Ando_3DGame\Ando_Game\x64\Debug\Ando_Game.exe
