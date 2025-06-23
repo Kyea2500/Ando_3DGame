@@ -10,13 +10,11 @@ private:
 
 private:
 	std::shared_ptr<Transform> m_transform;
-
-	// プレイヤーの位置
-	VECTOR m_pos;
-	// プレイヤーの移動ベクトル
-	VECTOR m_vec;
+	std::shared_ptr<Velocity> m_velocity;
 
 	// プレイヤーの移動速度
+	VECTOR m_pos = m_transform->GetPosition(); // 現在の位置を取得
+	VECTOR m_vec = m_velocity->GetVelocity(); // 現在の速度を取得
 	float speed;
 
 	// プレイヤーのモデルハンドル
@@ -41,7 +39,7 @@ public:
 	void Init();
 	void SetModel(int model) { m_modelHandle = model; }
 	void Update();
-	VECTOR GetPos() const { return m_pos; }
+	VECTOR GetPos() const { return m_transform->GetPosition(); }
 	VECTOR GetColPos() const;
 	float GetColRadius() const;
 	float GetColRadiusSign() const;

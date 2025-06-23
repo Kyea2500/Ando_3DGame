@@ -41,7 +41,7 @@ m_isSky(false)
 void Player::Init()
 {
 	m_transform->SetPosition({ 0.f, 0.f, 0.f });
-
+	m_velocity->SetVelocity({ 0.f, 0.f, 0.f });
 
 }
 
@@ -69,7 +69,7 @@ void Player::Update()
 	// 移動の更新
 	UpdateMove();
 	// プレイヤーの位置を更新
-	MV1SetPosition(m_modelHandle, m_pos);
+	MV1SetPosition(m_modelHandle, m_transform->GetPosition());
 }
 
 VECTOR Player::GetColPos() const
@@ -113,8 +113,7 @@ void Player::UpdateJump()
 	{
 		m_isJump = 0; // ジャンプ状態をリセット
 		m_isSky = false; // 空中状態を解除
-		m_pos.y = 0.0f; // 地面の高さに戻す
-		m_vec.y = 0.0f; // 垂直方向の速度をリセット
+		m_vec.y += kGravity; // 重力を適用
 	}
 }
 
@@ -144,8 +143,6 @@ void Player::UpdateMove()
 		// 左を向いている
 		m_isMoveLeft = true;
 		m_isMoveRight = false;
-
-
 	}
 	if (Pad::IsPress(PAD_INPUT_RIGHT))
 	{
@@ -155,7 +152,8 @@ void Player::UpdateMove()
 		m_isMoveRight = true;
 		m_isMoveLeft = false;
 	}
-
+	// 位置を更新
+	m_pos = m_transform->GetPosition();
 }
 
 bool Player::isJumping() const

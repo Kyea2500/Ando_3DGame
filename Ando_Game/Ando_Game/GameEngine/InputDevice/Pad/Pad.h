@@ -23,5 +23,17 @@ namespace Pad
 	/// <param name="button">判定を行いたいボタン</param>
 	/// <returns>ボタンが押された瞬間true,それ以外はfalse</returns>
 	bool IsTrigger(int button);
+
+	void GetRightStickX()
+	{
+		// 右スティックのX軸入力を取得
+		// ここに実装を追加
+
+	}
+	void GetRightStickY() 
+	{
+		// 右スティックのY軸入力を取得
+		// ここに実装を追加
+	}
 }
 
