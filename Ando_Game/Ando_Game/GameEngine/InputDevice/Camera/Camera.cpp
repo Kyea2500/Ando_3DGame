@@ -30,8 +30,6 @@ void Camera::End()
 
 void Camera::Update()
 {
-	//m_horizontalAngle -= Pad::GetRightStickX() * 0.1f; // 右スティックのX軸入力で水平角度を調整
-	//m_verticalAngle += Pad::GetRightStickY() * 0.1f; // 右スティックのY軸入力で垂直角度を調整
 	if (m_verticalAngle < -89.0f) m_verticalAngle = -89.0f; // 垂直角度の制限
 	if (m_verticalAngle > 89.0f) m_verticalAngle = 89.0f;
 	m_sinParam = std::sin(m_horizontalAngle / 180.0f * DX_PI_F);

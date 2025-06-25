@@ -1,0 +1,6 @@
+﻿  SceneMain.cpp
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(70,28): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(70,45): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(74,19): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(74,37): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  Ando_Game.vcxproj -> C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\x64\Debug\Ando_Game.exe

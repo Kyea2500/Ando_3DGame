@@ -1,0 +1,18 @@
+﻿  Enemy.cpp
+  Character.cpp
+  Colision.cpp
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\参考コード\GameProgram_Entity-Component-main\GameProgram_Entity-Component-main\GameProgram_Entity-Component\GameProgram_Entity-Component\GameEngine\Component\Physics\Colision\Colision.cpp(31,134): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\参考コード\GameProgram_Entity-Component-main\GameProgram_Entity-Component-main\GameProgram_Entity-Component\GameProgram_Entity-Component\GameEngine\Component\Physics\Colision\Colision.cpp(31,115): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\参考コード\GameProgram_Entity-Component-main\GameProgram_Entity-Component-main\GameProgram_Entity-Component\GameProgram_Entity-Component\GameEngine\Component\Physics\Colision\Colision.cpp(31,85): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+  Entity.cpp
+  GameObject.cpp
+  Jump.cpp
+  Vector3.cpp
+  main.cpp
+  Transform.cpp
+  Rightbody.cpp
+  Player.cpp
+  Move.cpp
+  TestObject.cpp
+  コードを生成中...
+  GameProgram_Entity-Component.vcxproj -> C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\参考コード\GameProgram_Entity-Component-main\GameProgram_Entity-Component-main\GameProgram_Entity-Component\x64\Debug\GameProgram_Entity-Component.exe

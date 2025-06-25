@@ -1,5 +1,8 @@
 #pragma once
 #include "../Base/GameObject.h"
+#include "../../Vector3/Vector3.h"
+#include "../../Parts/Transform/transform.h"
+#include "../../Parts/Velocity/Velocity.h"
 
 class Player : public GameObject
 {
@@ -13,8 +16,8 @@ private:
 	std::shared_ptr<Velocity> m_velocity;
 
 	// プレイヤーの移動速度
-	VECTOR m_pos = m_transform->GetPosition(); // 現在の位置を取得
-	VECTOR m_vec = m_velocity->GetVelocity(); // 現在の速度を取得
+	Vector3 m_pos;
+	Vector3 m_vec;
 	float speed;
 
 	// プレイヤーのモデルハンドル
@@ -45,6 +48,6 @@ public:
 	float GetColRadiusSign() const;
 	void Draw();
 	void Final();
-
+	
 };
 

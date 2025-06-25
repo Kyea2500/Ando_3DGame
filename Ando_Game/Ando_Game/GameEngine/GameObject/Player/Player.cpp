@@ -28,6 +28,8 @@ namespace
 }
 
 Player::Player() :speed(0.0f),
+m_transform(std::make_shared<Transform>()),
+m_velocity(std::make_shared<Velocity>()),
 m_modelHandle(-1),
 m_isMoveRight(false),
 m_isMoveLeft(false),
@@ -42,7 +44,6 @@ void Player::Init()
 {
 	m_transform->SetPosition({ 0.f, 0.f, 0.f });
 	m_velocity->SetVelocity({ 0.f, 0.f, 0.f });
-
 }
 
 void Player::Update()
@@ -69,7 +70,7 @@ void Player::Update()
 	// 移動の更新
 	UpdateMove();
 	// プレイヤーの位置を更新
-	MV1SetPosition(m_modelHandle, m_transform->GetPosition());
+	MV1SetPosition(m_modelHandle,m_transform->GetPosition());
 }
 
 VECTOR Player::GetColPos() const
@@ -153,7 +154,7 @@ void Player::UpdateMove()
 		m_isMoveLeft = false;
 	}
 	// 位置を更新
-	m_pos = m_transform->GetPosition();
+	m_pos = VecAdd(m_pos, m_vec);
 }
 
 bool Player::isJumping() const

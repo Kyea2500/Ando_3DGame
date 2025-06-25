@@ -84,6 +84,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>../Library/プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -104,6 +105,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>../Library/プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -120,6 +122,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>../Library/プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -140,6 +143,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>../Library/プロジェクトに追加すべきファイル_VC用</AdditionalLibraryDirectories>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -152,6 +156,7 @@
     <ClCompile Include="GameEngine\Scene\SceneTitle\SceneTitle.cpp" />
     <ClCompile Include="GameEngine\Scene\SceneMain\SceneMain.cpp" />
     <ClCompile Include="GameEngine\Parts\Velocity\Velocity.cpp" />
+    <ClCompile Include="GameEngine\Vector3\Vector3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameEngine\InputDevice\Camera\Camera.h" />
@@ -165,6 +170,7 @@
     <ClInclude Include="GameEngine\Scene\SceneMain\SceneMain.h" />
     <ClInclude Include="GameEngine\Scene\SceneClera\SceneClear .h" />
     <ClInclude Include="GameEngine\Parts\Velocity\Velocity.h" />
+    <ClInclude Include="GameEngine\Vector3\Vector3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
