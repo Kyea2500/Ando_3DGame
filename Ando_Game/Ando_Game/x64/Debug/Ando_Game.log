@@ -1,6 +1,9 @@
-﻿  SceneMain.cpp
-C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(70,28): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(70,45): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(74,19): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(74,37): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  Ando_Game.vcxproj -> C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\x64\Debug\Ando_Game.exe
+﻿  Player.cpp
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\GameObject\Player\Player.cpp(158,2): error C2065: 'm_pos': 定義されていない識別子です。
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\GameObject\Player\Player.cpp(158,17): error C2065: 'm_pos': 定義されていない識別子です。
+  SceneMain.cpp
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(71,28): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(71,45): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(75,19): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\安藤 歩夢\Documents\GitHub\Ando_3DGame\Ando_Game\Ando_Game\GameEngine\Scene\SceneMain\SceneMain.cpp(75,37): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  コードを生成中...

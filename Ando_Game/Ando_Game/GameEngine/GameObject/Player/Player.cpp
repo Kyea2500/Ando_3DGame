@@ -154,6 +154,7 @@ void Player::UpdateMove()
 		m_isMoveLeft = false;
 	}
 	// ˆÊ’u‚ğXV
+	//m_pos = VecAdd(m_pos, m_vec);
 	m_pos = VecAdd(m_pos, m_vec);
 }
 

@@ -1,4 +1,4 @@
-#include "JoyPad.h"
+	#include "JoyPad.h"
 #include <iostream>
 
 JoyPad::JoyPad()

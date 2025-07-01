@@ -1,5 +1,11 @@
 #include "DxLib.h"
 #include"GameEngine/InputDevice/Game.h"
+#include"../Ando_Game/GameEngine/Scene/SceneMain/SceneMain.h"
+
+namespace
+{
+	constexpr int MaxTime = 16667;
+}
 
 // プログラムは WinMain から始まります
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
@@ -12,7 +18,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	{
 		return -1;			// エラーが起きたら直ちに終了
 	}
-
+	SceneMain sceneMain;	// シーンのインスタンスを作成
+	sceneMain.Init();		// シーンの初期化
 	// 描画先を裏画面にする
 	SetDrawScreen(DX_SCREEN_BACK);
 
@@ -24,9 +31,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		// 画面をクリアに
 		ClearDrawScreen();
 
-		// ここにゲームの処理を書く
-		DrawPixel(320, 240, GetColor(255, 255, 255));	// 点を打つ
 		
+		sceneMain.Update();	// シーンの更新処理
+		sceneMain.Draw();	// シーンの描画処理
 
 
 
@@ -38,7 +45,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		// escキーで終了(いったん終了)
 		if (CheckHitKey(KEY_INPUT_ESCAPE))	break;
 
-		while (GetNowHiPerformanceCount() - time)
+		while (GetNowHiPerformanceCount() - time< MaxTime)
 		{
 		}
 

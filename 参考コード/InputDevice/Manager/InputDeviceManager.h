@@ -21,8 +21,8 @@ private:
 	InputDeviceManager& operator=(const InputDeviceManager&) = delete;
 
 
-public:
 
+public:
 	void InputDeviceUpdate();
 
 	//=======================================

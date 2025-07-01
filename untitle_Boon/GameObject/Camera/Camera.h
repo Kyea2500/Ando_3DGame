@@ -21,5 +21,6 @@ private:
 	VECTOR m_Position; // カメラの位置
 	VECTOR m_Target;   // カメラの向き
 	VECTOR m_UpVector; // 上方向ベクトル
+	DINPUT_JOYSTATE input;
 };
 

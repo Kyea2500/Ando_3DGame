@@ -16,7 +16,6 @@ private:
 	std::shared_ptr<Velocity> m_velocity;
 
 	// プレイヤーの移動速度
-	Vector3 m_pos;
 	Vector3 m_vec;
 	float speed;
 
